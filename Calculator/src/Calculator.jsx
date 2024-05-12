@@ -10,6 +10,11 @@ export const Calculator = () => {
   };
 
   const handleCalculate = () => {
+    if (value.trim() === "") {
+      setResult("Expression is incomplete");
+      return;
+    }
+  
     try {
       const calculatedResult = eval(value);
       setResult(calculatedResult);
