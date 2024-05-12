@@ -11,7 +11,7 @@ export const Calculator = () => {
 
   const handleCalculate = () => {
     if (value.trim() === "") {
-      setResult("Expression is incomplete");
+      setResult("Error");
       return;
     }
   
